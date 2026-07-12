@@ -1,0 +1,21 @@
+{
+  "name": "real_estate_project",
+  "version": "1.0.0",
+  "description": "real estate tokenization project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abhinav Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.7.2",
+    "nodemon": "^3.1.14"
+  }
+}
