@@ -1,8 +1,8 @@
 require("dotenv").config();
 
 const mongoose = require("mongoose");
-const Property = require("./models/propertyModel");
-const properties = require("./data/properties.json");
+const Property = require("../models/propertyModel");
+const properties = require("../data/properties.json");
 
 mongoose.connect(process.env.MONGO_URI);
 

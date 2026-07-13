@@ -1,5 +1,5 @@
 const express = require("express")
-const router = Router.express();
+const router = express.Router();
 
 const validateToken = require("../middleware/validateToken")
 const investInProperty = require("../controller/investmentController")

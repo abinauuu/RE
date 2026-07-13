@@ -41,15 +41,6 @@ const propertySchema = mongoose.Schema({
         type : Number,
         required :true,
         min:0
-    },
-    totalTokens:{
-        type:Number
-    },
-    availableTokens:{
-        type:Number
-    },
-    tokenPrice:{
-        type:Number
     }
 },{
     timestamps:true
