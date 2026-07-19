@@ -12,8 +12,9 @@ const userRoutes = require("./routes/userRoutes.js")
 app.use("/api/user",userRoutes)
 const propertyRoutes=require("./routes/propertyRoutes.js")
 app.use("/api/properties",propertyRoutes)
-const investmentroutes = require("./routes/investmentRoutes.js")
-app.use("/api/investments",investmentroutes)
+const investmentRoutes = require("./routes/investmentRoutes.js")
+app.use("/api/investments",investmentRoutes)
+const portfolioRoutes = require("./routes/portfolioRoutes.js")
 
 app.listen(process.env.PORT,()=>{
     console.log(`server is running at port ${process.env.PORT}`)
