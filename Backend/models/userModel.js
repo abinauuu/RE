@@ -8,12 +8,12 @@ const userSchema=mongoose.Schema({
     PAN_card : {
         type : String,
         required :[true,"please choose a username"],
-        unique:[true,"email already registered"]
+        unique:[true,"PAN CARD already registered"]
     },
     phone : {
         type : String,
         required :[true,"please choose a username"],
-        unique:[true,"email already registered"]
+        unique:[true,"Phone number already registered"]
     },
     email: {
         type : String,
@@ -22,7 +22,7 @@ const userSchema=mongoose.Schema({
     },
     password:{
         type : String,
-        required :[true,"please choose a username"]
+        required :[true,"please choose a password"]
     },
     savedProperties: {
     type: [{

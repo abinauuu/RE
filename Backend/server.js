@@ -1,11 +1,16 @@
 const express = require("express")
 const dotenv=require("dotenv")
 dotenv.config()
+const cors = require("cors")
+
 const connectdb = require("./config/db.js")
 connectdb();
 const simulateMarket = require("./services/marketSimulation.js")
 setInterval(()=>{simulateMarket();},3600000)
 const app = express();
+app.use(cors({
+  origin: 'http://localhost:5173'
+}))
 app.use(express.json());
 
 const userRoutes = require("./routes/userRoutes.js")
